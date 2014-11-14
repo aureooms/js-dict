@@ -62,3 +62,5 @@ Dict.prototype.update = function ( callback ) {
 	}
 
 };
+
+exports.Dict = Dict;
