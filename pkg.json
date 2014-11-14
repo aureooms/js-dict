@@ -1,0 +1,17 @@
+{
+	"ns": "dict",
+	"out": "js/dist/",
+	"debug": false,
+	"src": "js/src/",
+	"code": {
+		"test": [
+			"test",
+			"js"
+		],
+		"main": [
+			"js",
+			"dist",
+			"dict.js"
+		]
+	}
+}
