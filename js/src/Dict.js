@@ -1,7 +1,17 @@
 
 
 var Dict = function ( hash ) {
+
+	var key;
+
 	this.hash = hash;
+
+	this.length = 0;
+
+	for ( key in hash ) {
+		++this.length;
+	}
+
 };
 
 Dict.prototype.get = function ( key ) {
@@ -24,6 +34,10 @@ Dict.prototype.getdefault = function ( key, fallback ) {
 
 Dict.prototype.set = function ( key, value ) {
 
+	if ( !( key in this.hash ) ) {
+		++this.length;
+	}
+
 	this.hash[key] = value;
 
 };
@@ -36,9 +50,19 @@ Dict.prototype.setdefault = function ( key, value ) {
 
 	else {
 
+		++this.length;
 		this.hash[key] = value;
 		return value;
 
+	}
+
+};
+
+Dict.prototype.unset = function ( key ) {
+
+	if ( key in this.hash ) {
+		--this.length;
+		delete this.hash[key];
 	}
 
 };
