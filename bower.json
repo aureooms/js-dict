@@ -1,7 +1,7 @@
 {
 	"description": "dictionary ADT code bricks for JavaScript",
 	"homepage": "http://aureooms.github.io/js-dict/",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"license": "AGPL-3.0",
 	"main": "js/dist/dict.js",
 	"name": "aureooms-js-dict",
