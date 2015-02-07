@@ -14,14 +14,15 @@ dictionary ADT code bricks for JavaScript
 [![NPM downloads per month](http://img.shields.io/npm/dm/aureooms-js-dict.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-dict)
 [![GitHub issues](http://img.shields.io/github/issues/aureooms/js-dict.svg?style=flat)](https://github.com/aureooms/js-dict/issues)
 
+```javascript
+var buddies;
 
-	var buddies;
+buddies = new dict.Dict( {} );
+console.log( buddies.length ); // 0
 
-	buddies = new dict.Dict( {} );
-	console.log( buddies.length ); // 0
+buddies.set( "Camus", "Albert" );
+console.log( buddies.length ); // 1
 
-	buddies.set( "Camus", "Albert" );
-	console.log( buddies.length ); // 1
-
-	buddies.set( "Lorenz", "Konrad" );
-	console.log( buddies.length ); // 2
+buddies.set( "Lorenz", "Konrad" );
+console.log( buddies.length ); // 2
+```
