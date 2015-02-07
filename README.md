@@ -15,7 +15,9 @@ dictionary ADT code bricks for JavaScript
 [![GitHub issues](http://img.shields.io/github/issues/aureooms/js-dict.svg?style=flat)](https://github.com/aureooms/js-dict/issues)
 
 ```javascript
-var buddies;
+var dict , buddies ;
+
+dict = require( "aureooms-js-dict" ) ;
 
 buddies = new dict.Dict( {} );
 console.log( buddies.length ); // 0
