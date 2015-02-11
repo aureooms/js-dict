@@ -15,7 +15,7 @@
 	"author": "aureooms",
 	"license": "AGPL-3.0",
 	"description": "dictionary ADT code bricks for JavaScript",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"bugs": {
 		"url": "https://github.com/aureooms/js-dict/issues"
 	},
