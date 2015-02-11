@@ -1,0 +1,11 @@
+{
+	"name": "aureooms-js-dict",
+	"repo": "aureooms/js-dict",
+	"scripts": [
+		"js/dist/dict.js"
+	],
+	"version": "0.1.0",
+	"description": "dictionary ADT code bricks for JavaScript",
+	"main": "js/dist/dict.js",
+	"license": "AGPL-3.0"
+}
