@@ -14,17 +14,27 @@ dictionary ADT code bricks for JavaScript
 [![NPM downloads per month](http://img.shields.io/npm/dm/aureooms-js-dict.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-dict)
 [![GitHub issues](http://img.shields.io/github/issues/aureooms/js-dict.svg?style=flat)](https://github.com/aureooms/js-dict/issues)
 
-```javascript
-var dict , buddies ;
+Can be managed through [bower](https://github.com/bower/bower),
+[component](https://github.com/componentjs/component), or
+[npm](https://github.com/npm/npm).
 
-dict = require( "aureooms-js-dict" ) ;
+```js
+let dict = require( "aureooms-js-dict" ) ;
+```
 
-buddies = new dict.Dict( {} );
-console.log( buddies.length ); // 0
+Example usage:
 
-buddies.set( "Camus", "Albert" );
-console.log( buddies.length ); // 1
+```js
+let buddies = new dict.Dict( { } ) ;
+buddies.length ; // 0
 
-buddies.set( "Lorenz", "Konrad" );
-console.log( buddies.length ); // 2
+buddies.set( "Camus" , "Albert" ) ;
+buddies.length ; // 1
+
+buddies.set( "Lorenz" , "Konrad" ) ;
+buddies.length ; // 2
+
+buddies.get( "Camus" ) ; // "Albert"
+buddies.get( "Lorenz" ) ; // "Konrad"
+buddies.getdefault( "Lovecraft" , "Cthulhu" ) ; // "Cthulhu"
 ```
