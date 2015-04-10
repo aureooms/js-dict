@@ -1,7 +1,7 @@
 [js-dict](http://aureooms.github.io/js-dict)
 ==
 
-dictionary ADT code bricks for JavaScript
+Dictionary ADT code bricks for JavaScript.
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-dict.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-dict/master/LICENSE)
 [![NPM version](http://img.shields.io/npm/v/aureooms-js-dict.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-dict)
