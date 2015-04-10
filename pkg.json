@@ -1,5 +1,5 @@
 {
-	"ns": "dict",
+	"name": "dict",
 	"out": "js/dist/",
 	"debug": false,
 	"src": "js/src/",
