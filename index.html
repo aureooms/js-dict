@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><title>index</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content=""><meta name="groc-document-path" content="index"><meta name="groc-project-path" content="README.md"><meta name="groc-github-url" content="https://github.com/aureooms/js-dict"><link rel="stylesheet" type="text/css" media="all" href="assets/style.css"><script type="text/javascript" src="assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-dict/blob/master/README.md">README.md</a></div></div><div id="document"><div class="segment"><div class="comments "><div class="wrapper"><h1 id="-js-dict-http-aureooms-github-io-js-dict-"><a href="http://aureooms.github.io/js-dict">js-dict</a></h1>
-<p>dictionary ADT code bricks for JavaScript</p>
+<p>Dictionary ADT code bricks for JavaScript.</p>
 <p><a href="https://raw.githubusercontent.com/aureooms/js-dict/master/LICENSE"><img src="http://img.shields.io/npm/l/aureooms-js-dict.svg?style=flat" alt="NPM license"></a>
 <a href="https://www.npmjs.org/package/aureooms-js-dict"><img src="http://img.shields.io/npm/v/aureooms-js-dict.svg?style=flat" alt="NPM version"></a>
 <a href="http://bower.io/search/?q=aureooms-js-dict"><img src="http://img.shields.io/bower/v/aureooms-js-dict.svg?style=flat" alt="Bower version"></a>
@@ -9,16 +9,23 @@
 <a href="https://david-dm.org/aureooms/js-dict#info=devDependencies"><img src="http://img.shields.io/david/dev/aureooms/js-dict.svg?style=flat" alt="devDependencies Status"></a>
 <a href="https://codeclimate.com/github/aureooms/js-dict"><img src="http://img.shields.io/codeclimate/github/aureooms/js-dict.svg?style=flat" alt="Code Climate"></a>
 <a href="https://www.npmjs.org/package/aureooms-js-dict"><img src="http://img.shields.io/npm/dm/aureooms-js-dict.svg?style=flat" alt="NPM downloads per month"></a>
-<a href="https://github.com/aureooms/js-dict/issues"><img src="http://img.shields.io/github/issues/aureooms/js-dict.svg?style=flat" alt="GitHub issues"></a></p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> dict , buddies ;
+<a href="https://github.com/aureooms/js-dict/issues"><img src="http://img.shields.io/github/issues/aureooms/js-dict.svg?style=flat" alt="GitHub issues"></a>
+<a href="http://inch-ci.org/github/aureooms/js-dict"><img src="http://inch-ci.org/github/aureooms/js-dict.svg?branch=master&amp;style=shields" alt="Inline docs"></a></p>
+<p>Can be managed through <a href="https://github.com/duojs/duo">duo</a>,
+<a href="https://github.com/componentjs/component">component</a>,
+<a href="https://github.com/bower/bower">bower</a>, or
+<a href="https://github.com/npm/npm">npm</a>.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> dict = <span class="hljs-built_in">require</span>( <span class="hljs-string">"aureooms-js-dict"</span> ) ;</code></pre>
+<p>Example usage:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> buddies = <span class="hljs-keyword">new</span> dict.Dict( { } ) ;
+buddies.length ; <span class="hljs-comment">// 0</span>
 
-dict = <span class="hljs-built_in">require</span>( <span class="hljs-string">"aureooms-js-dict"</span> ) ;
+buddies.set( <span class="hljs-string">"Camus"</span> , <span class="hljs-string">"Albert"</span> ) ;
+buddies.length ; <span class="hljs-comment">// 1</span>
 
-buddies = <span class="hljs-keyword">new</span> dict.Dict( {} );
-console.log( buddies.length ); <span class="hljs-comment">// 0</span>
+buddies.set( <span class="hljs-string">"Lorenz"</span> , <span class="hljs-string">"Konrad"</span> ) ;
+buddies.length ; <span class="hljs-comment">// 2</span>
 
-buddies.set( <span class="hljs-string">"Camus"</span>, <span class="hljs-string">"Albert"</span> );
-console.log( buddies.length ); <span class="hljs-comment">// 1</span>
-
-buddies.set( <span class="hljs-string">"Lorenz"</span>, <span class="hljs-string">"Konrad"</span> );
-console.log( buddies.length ); <span class="hljs-comment">// 2</span></code></pre></div></div></div></div></body></html>
+buddies.get( <span class="hljs-string">"Camus"</span> ) ; <span class="hljs-comment">// "Albert"</span>
+buddies.get( <span class="hljs-string">"Lorenz"</span> ) ; <span class="hljs-comment">// "Konrad"</span>
+buddies.getdefault( <span class="hljs-string">"Lovecraft"</span> , <span class="hljs-string">"Cthulhu"</span> ) ; <span class="hljs-comment">// "Cthulhu"</span></code></pre></div></div></div></div></body></html>
