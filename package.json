@@ -20,7 +20,7 @@
 		"url": "https://github.com/aureooms/js-dict/issues"
 	},
 	"devDependencies": {
-		"aureooms-node-package": "^4.0.1"
+		"aureooms-node-package": "^4.2.5"
 	},
 	"repository": {
 		"type": "git",
