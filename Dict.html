@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="en"><head><title>Dict</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content=""><meta name="groc-document-path" content="Dict"><meta name="groc-project-path" content="js/src/Dict.js"><meta name="groc-github-url" content="https://github.com/aureooms/js-dict"><link rel="stylesheet" type="text/css" media="all" href="assets/style.css"><script type="text/javascript" src="assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-dict/blob/master/js/src/Dict.js">js/src/Dict.js</a></div></div><div id="document"><div class="segment"><div class="code"><div class="wrapper"><span class="hljs-keyword">var</span> Dict = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> hash </span>) </span>{
+
+	<span class="hljs-keyword">var</span> key;
+
+	<span class="hljs-keyword">this</span>.hash = hash;
+
+	<span class="hljs-keyword">this</span>.length = <span class="hljs-number">0</span>;
+
+	<span class="hljs-keyword">for</span> ( key <span class="hljs-keyword">in</span> hash ) {
+		++<span class="hljs-keyword">this</span>.length;
+	}
+
+};
+
+Dict.prototype.get = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> key </span>) </span>{
+
+	<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.hash[key];
+
+};
+
+Dict.prototype.getdefault = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> key, fallback </span>) </span>{
+
+	<span class="hljs-keyword">if</span> ( key <span class="hljs-keyword">in</span> <span class="hljs-keyword">this</span>.hash ) {
+		<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.hash[key];
+	}
+
+	<span class="hljs-keyword">else</span> {
+		<span class="hljs-keyword">return</span> fallback;
+	}
+
+};
+
+Dict.prototype.set = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> key, value </span>) </span>{
+
+	<span class="hljs-keyword">if</span> ( !( key <span class="hljs-keyword">in</span> <span class="hljs-keyword">this</span>.hash ) ) {
+		++<span class="hljs-keyword">this</span>.length;
+	}
+
+	<span class="hljs-keyword">this</span>.hash[key] = value;
+
+};
+
+Dict.prototype.setdefault = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> key, value </span>) </span>{
+
+	<span class="hljs-keyword">if</span> ( key <span class="hljs-keyword">in</span> <span class="hljs-keyword">this</span>.hash ) {
+		<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.hash[key];
+	}
+
+	<span class="hljs-keyword">else</span> {
+
+		++<span class="hljs-keyword">this</span>.length;
+		<span class="hljs-keyword">this</span>.hash[key] = value;
+		<span class="hljs-keyword">return</span> value;
+
+	}
+
+};
+
+Dict.prototype.unset = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> key </span>) </span>{
+
+	<span class="hljs-keyword">if</span> ( key <span class="hljs-keyword">in</span> <span class="hljs-keyword">this</span>.hash ) {
+		--<span class="hljs-keyword">this</span>.length;
+		<span class="hljs-keyword">delete</span> <span class="hljs-keyword">this</span>.hash[key];
+	}
+
+};
+
+Dict.prototype.each = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> callback </span>) </span>{
+
+	<span class="hljs-keyword">var</span> key;
+
+	<span class="hljs-keyword">for</span> ( key <span class="hljs-keyword">in</span> <span class="hljs-keyword">this</span>.hash ) {
+		callback( key, <span class="hljs-keyword">this</span>.hash[key] );
+	}
+
+};
+
+Dict.prototype.update = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> callback </span>) </span>{
+
+	<span class="hljs-keyword">var</span> key;
+
+	<span class="hljs-keyword">for</span> ( key <span class="hljs-keyword">in</span> <span class="hljs-keyword">this</span>.hash ) {
+		<span class="hljs-keyword">this</span>.hash[key] = callback( key, <span class="hljs-keyword">this</span>.hash[key] );
+	}
+
+};
+
+exports.Dict = Dict;</div></div></div></div></body></html>
