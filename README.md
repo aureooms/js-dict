@@ -1,7 +1,7 @@
 [js-dict](http://aureooms.github.io/js-dict)
 ==
 
-Dictionary ADT code bricks for JavaScript. Parents is
+Dictionary ADT code bricks for JavaScript. Parent is
 [aureooms/js-data-structures](https://github.com/aureooms/js-data-structures).
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-dict.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-dict/master/LICENSE)
