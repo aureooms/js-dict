@@ -25,7 +25,7 @@ Can be managed through [duo](https://github.com/duojs/duo),
 let dict = require( "aureooms-js-dict" ) ;
 ```
 
-Example usage:
+## Use
 
 ```js
 let buddies = new dict.Dict( { } ) ;
