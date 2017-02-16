@@ -27,5 +27,5 @@
 		"url": "https://github.com/aureooms/js-dict.git"
 	},
 	"main": "js/dist/dict.js",
-	"name": "aureooms-js-dict"
+	"name": "@aureooms/js-dict"
 }
