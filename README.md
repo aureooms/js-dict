@@ -4,7 +4,7 @@
 Dictionary ADT code bricks for JavaScript. Parent is
 [aureooms/js-data-structures](https://github.com/aureooms/js-data-structures).
 
-[![NPM license](https://img.shields.io/npm/l/@aureooms/js-dict.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-dict/master/LICENSE)
+[![License](https://img.shields.io/github/license/aureooms/js-dict.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-dict/master/LICENSE)
 [![NPM version](https://img.shields.io/npm/v/@aureooms/js-dict.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-dict)
 [![Bower version](https://img.shields.io/bower/v/@aureooms/js-dict.svg?style=flat)](http://bower.io/search/?q=@aureooms/js-dict)
 [![Build Status](https://img.shields.io/travis/aureooms/js-dict.svg?style=flat)](https://travis-ci.org/aureooms/js-dict)
