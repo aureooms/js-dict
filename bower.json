@@ -1,6 +1,6 @@
 {
 	"description": "dictionary ADT code bricks for JavaScript",
-	"homepage": "http://aureooms.github.io/js-dict/",
+	"homepage": "http://make-github-pseudonymous-again.github.io/js-dict/",
 	"version": "0.1.4",
 	"license": "AGPL-3.0",
 	"main": "js/dist/dict.js",

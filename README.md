@@ -1,4 +1,4 @@
-[js-dict](http://aureooms.github.io/js-dict)
+[js-dict](http://make-github-pseudonymous-again.github.io/js-dict)
 ==
 
 Dictionary ADT code bricks for JavaScript. Parent is
